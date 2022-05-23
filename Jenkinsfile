@@ -23,6 +23,7 @@ pipeline{
             environment {
                 NETLIFY_AUTH_TOKEN = credentials('NETLIFY_AUTH_TOKEN')
                 NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID')
+                BUILD_URL = localhost:8080/snapshot/1
             }
             
             steps{
