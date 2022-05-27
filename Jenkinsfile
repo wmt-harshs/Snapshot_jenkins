@@ -31,6 +31,7 @@ pipeline{
                 // sh './node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=build'
                 sh 'npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir build/ --prod'
                 // sh 'echo "The current url is ${env.BUILD_URL}"'
+                sh 'println env.BUILD_URL'
             }
         }
     }
