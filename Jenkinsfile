@@ -22,11 +22,11 @@ pipeline{
             
             environment {
                 NETLIFY_AUTH_TOKEN = credentials('NETLIFY_AUTH_TOKEN')
-                NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID')
+                NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID_s1')
             }
             
             steps{
-                
+
                 sh 'npm install netlify-cli'
                 sh 'npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir build/ --prod'
             }
