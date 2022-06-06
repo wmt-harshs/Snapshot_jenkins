@@ -17,7 +17,6 @@ pipeline{
                 archiveArtifacts artifacts: 'build/'
             }
         }
-        
         stage('deliver'){
             
             environment {
