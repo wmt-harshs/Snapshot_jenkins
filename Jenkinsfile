@@ -10,6 +10,7 @@ pipeline{
                 sh 'npm config ls'
             }
         }
+        
         stage('build') {
             steps {
                 sh 'npm ci'
