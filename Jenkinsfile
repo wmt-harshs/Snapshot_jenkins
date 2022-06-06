@@ -23,7 +23,6 @@ pipeline{
                 NETLIFY_AUTH_TOKEN = credentials('NETLIFY_AUTH_TOKEN')
                 NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID_s1')
             }
-            
             steps{
 
                 sh 'npm install netlify-cli'
