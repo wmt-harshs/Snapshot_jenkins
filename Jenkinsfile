@@ -3,7 +3,7 @@ pipeline{
     environment {
         CI = 'true'
     }
-    tools {nodejs "node"}
+##    tools {nodejs "node"}
     stages {
         stage('check') {
             steps {
